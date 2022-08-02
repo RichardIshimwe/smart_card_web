@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="smart.css" >
-    <title>Smart card</title>
+    <title>home</title>
     <script src="javascrip.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style media="screen">
@@ -170,7 +170,7 @@ a{
                               <li id="categories1"><a href="#">SERVICE</a>
             </li>
                 </li>
-                       <li id="categories1"><a href="#">ABOUT US</a>
+                       <li id="aboutus.php"><a href="#">ABOUT US</a>
             </li>
             </li>
             <li id="categories">

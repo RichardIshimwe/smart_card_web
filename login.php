@@ -89,7 +89,9 @@ a{
   <br/> <label for="psw"><b>Password</b></label> <br/>  
     <input type="password" placeholder="Enter Password" name="password" required>         
     <br/><br/><input type="submit" name="button2"
-                value="SUBMIT" id="button"/><br/> 
+                value="log in" id="button"/>
+      <input type="submit" name="button1"
+                value="Sign up" id="button"/><br/> 
 </form>  
 </div>
 </body>  

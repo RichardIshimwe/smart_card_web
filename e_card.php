@@ -20,8 +20,6 @@ if(isset($_POST["button1"])) {
   echo "button1 ppressed";
   }
 ?>
-
-
 <!DOCTYPE html>  
 <html>  
 <head>  
@@ -101,13 +99,13 @@ a{
 <input type="text" name="gender" placeholder="M/F" size="10"required />
 </label>
 <br/> <label>   
-Phone :  <br/> 
+Phone :<br/> 
 </label>   
 <input type="text" name="phone" placeholder="phone no." size="10" required/>    
  <label for="email"><br/> <b>Email</b><br/>  
  <input type="text" placeholder="Enter Email" name="email" required> </label>  
- <br/> <label> registration number <br/>   
-  <input type="text" name="reg" placeholder= "reg" size="10" required />   
+ <br/> <label> username <br/>   
+  <input type="text" name="reg" placeholder= "user name" size="10" required />   
   </label> 
   <br/> <label for="psw"><b>Password</b></label> <br/>  
     <input type="password" placeholder="Enter Password" name="password" required>         

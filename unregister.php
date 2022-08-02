@@ -84,7 +84,7 @@ a{
 <form method="post" action="">  
   <div class="container">  
   <font><a href="home.php"><<<< home </a></font>
-  <center>  <h1> UNREGISTER FROM THE SYSTEM</h1> </center>  
+  <center><h1> UNREGISTER FROM THE SYSTEM</h1></center>  
   <hr>  
   <br/>  <label> Firstname  <br/> 
 <input type="text" name="firstname" placeholder= "Firstname" size="10" required />   
