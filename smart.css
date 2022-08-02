@@ -2,10 +2,14 @@
 /*body {
 	background-color: blue;
 }*/
-
+.categories12{
+margin: left 40px; ;
+    float: right;
+}
 #td1 {
 	text-align: center;
     color: white;
+
 }
 #td2 {
 	text-align: center;
@@ -69,15 +73,10 @@
             /* BACKGROUND COLOR AND BORDER. */
             background:mediumseagreen;
         }
-        
-        /* SUB MENU LIST */
         #menu ul ul li {
             text-align:left; 
             margin:0;
         }
-        
-        /* SET HEIGHT AS '0', SO THE SUBMENUS REMAINS HIDDEN IN THE BEGINNING. */
-        
         #menu ul ul li a {
             height:0; 
              line-height:0; 
@@ -92,6 +91,7 @@
             visibility:hidden;
             position:absolute;
             top:175px;
+            
         }
         #categories a {
             transition:all 0.3s linear; 
@@ -122,10 +122,5 @@
             color:black;
             font-size: 20px;
         }
-        #last{
-            background: black;
-            height: 95px;
-            width: 100%;
-            border-radius: 20px;
-        }
+    
         

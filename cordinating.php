@@ -6,7 +6,7 @@ $db= "smart_card";
 $conn = mysqli_connect($servername, $user, $pass,$db);
 if($conn)
 {
-echo "connected";
+echo "connected ";
 }
 else{
     echo "not connected";

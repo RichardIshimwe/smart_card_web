@@ -1,30 +1,33 @@
 <?php
   require 'cordinating.php';
+
+  
 /*$sql ="INSERT INTO unregister(first_name,last_name,email,reg,password) VALUES('tsr','gsd','gfhg',23,'eef')";
 
   mysqli_query($conn, $sql);
   mysqli_close($conn);*/
+
 if(isset($_POST["button2"])) {
 echo "button2 ppressed";
+$reg =$_REQUEST["reg"];
 $first =$_REQUEST["firstname"];
 $second =$_REQUEST["lastname"];
-$reg = $_REQUEST["reg"];
-$message =$_REQUEST["message"];
-$phone = $_REQUEST["phone"];
-$email = $_REQUEST["email"];
+$email =$_REQUEST["email"];
 $password =$_REQUEST["password"];
- $sql ="INSERT INTO apointmenttb(first_name,lastname,username,mesage,phone,email,pass) VALUES('$first','$second','$reg','$message','$phone','$email','$password')";
+
+ $sql ="INSERT INTO unregister(first_name,last_name,email,reg,password) VALUES('$first','$second','$email','$reg','$password')";
 mysqli_query($conn, $sql);
 mysqli_close($conn);
 
 }
  
+
 ?>
 <!DOCTYPE html>  
 <html>  
 <head>  
 <meta name="viewport" content="width=device-width, initial-scale=1">  
-<style>  
+<style> 
 body{  
   font-family: Calibri, Helvetica, sans-serif;  
   background-color: rgb(56, 136, 56) ;
@@ -32,18 +35,18 @@ body{
   font-weight: bolder;
 }  
 .container {  
-    padding: 50px;  
-  background-color: darkgreen;  
-  border-radius: 20px;
+padding: 50px;
+background-color: darkgreen;  
 }  
   
 input[type=text], input[type=password], textarea {  
-  width: 100%;  
+  width: 40%;  
   padding: 15px;  
-  margin: 5px 0 22px 0;  
+  margin: 5px 0 5px 0;  
   display: inline-block;  
   border: none;  
-  background: #f1f1f1;  
+  background: #f1f1f1; 
+  border-radius:5px; 
 }  
 input[type=text]:focus, input[type=password]:focus {  
   background-color: orange;  
@@ -70,55 +73,32 @@ hr {
   opacity: 1; 
   background-color: greenyellow; 
 }  
+a{
+  text-decoration: none;
+  color:white;
+  font-size:20px;
+}
 </style>  
 </head>  
 <body>  
 <form method="post" action="">  
   <div class="container">  
-<center>  <h1> Appointment</h1>   </center>
+  <font><a href="home.php"><<<< home </a></font>
+  <center>  <h1> UNREGISTER FROM THE SYSTEM</h1> </center>  
   <hr>  
-  <label> Firstname   
+  <br/>  <label> Firstname  <br/> 
 <input type="text" name="firstname" placeholder= "Firstname" size="10" required />   
-</label> 
-<label> Lastname:     
+ </label>
+ <br/> <label> Lastname:  <br/>    
 <input type="text" name="lastname" placeholder="Lastname" size="10"required />   
-</label>
-<label> User mame   
-    <input type="text" name="reg" placeholder= "reg" size="10" required />   
-    </label> 
-<div>  
-<label>   
-Appointment with :  
-</label>   
-  
-<select>  
-<option value="Course">lecture
-</option>  
-<option value="BCA">guild concil staff</option>  
-<option value="BBA">head of departement</option>  
-<option value="B.Tech">Cordinator</option>   
-</select>  
-</div>  
-<div>
-    <textarea name="message" id="" cols="30" rows="10">reason</textarea>
-</div>
-<div>  
-<label>   
-Gender :  
-</label><br>  
-<input type="radio" value="Male" name="gender" checked > Male   
-<input type="radio" value="Female" name="gender"> Female   
-<input type="radio" value="Other" name="gender"> Other  
-  
-</div>  
-<label>   
-Phone :  
-</label>   
-<input type="text" name="phone" placeholder="phone no." size="10" required/>    
- <label for="email"><b>Email</b></label>  
- <input type="text" placeholder="Enter Email" name="email" required>   
-<label for="psw"><b>Password</b></label> <br/>  
-    <input type="password" placeholder="Enter Password" name="password" required>  
+</label>  
+ <label for="email"><br/> <b>Email</b><br/>  
+ <input type="text" placeholder="Enter Email" name="email" required> </label>  
+ <br/> <label> user name <br/>   
+  <input type="text" name="reg" placeholder= "reg" size="10" required />   
+  </label> 
+  <br/> <label for="psw"><b>Password</b></label> <br/>  
+    <input type="password" placeholder="Enter Password" name="password" required>         
     <br/><br/><input type="submit" name="button2"
                 value="SUBMIT" id="button"/><br/> 
 </form>  
