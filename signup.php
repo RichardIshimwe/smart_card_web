@@ -5,14 +5,23 @@
   mysqli_query($conn, $sql);
   mysqli_close($conn);*/
 
-if(isset($_POST["button2"])) {
+
+ 
+
+
+
+
+if(isset($_POST["button1"])) {
 echo "SUBMITED";
+$names = $_REQUEST["full"];
+$user =$_REQUEST["user"];
+$gender =$_REQUEST["gender"];
+$reg = $_REQUEST["depart"];
 $email =$_REQUEST["email"];
-$password =$_REQUEST["password"];
-$reg = $_REQUEST["reg"];
-
-
- $sql ="INSERT INTO login_form(username,email,pass) VALUES('$reg','$email','$password')";
+$password =$_REQUEST["phone"];
+$phone = $_REQUEST["campus"];
+$passcode = $_REQUEST["password"];
+ $sql ="INSERT INTO usertb(reg,full_names,password,email,pass,department,gender,phone) VALUES('$user','$names','$password','$email','$passcode','$reg','$gender','$phone')";
 mysqli_query($conn, $sql);
 mysqli_close($conn);
 
@@ -80,19 +89,32 @@ a{
 <form method="post" action="">  
   <div class="container">  
   <font><a href="home.php"><<<< home </a></font>
-  <center>  <h1> LOGIN FORM</h1> </center>  
+  <center>  <h1> SIGNUP FORM</h1> </center>  
   <hr>  
-   <label> user name <br/>   
-  <input type="text" name="reg" placeholder= "reg" size="10" required />   
+  <label> user name <br/>   
+  <input type="text" name="user" placeholder= "" size="10" required />   
   </label> 
- <label for="email"><br/> <b>Email</b><br/>  
+  <br/> <label> full names <br/>   
+  <input type="text" name="full" placeholder= "" size="10" required />   
+  </label> 
+  <br/> <label> phone number <br/>   
+  <input type="text" name="phone" placeholder= "" size="10" required />   
+  </label> 
+  <br/><label for="email"><br/> <b>Email</b><br/>  
  <input type="text" placeholder="Enter Email" name="email" required> </label>  
   <br/> <label for="psw"><b>Password</b></label> <br/>  
-    <input type="password" placeholder="Enter Password" name="password" required>         
-    <br/><br/><input type="submit" name="button2"
-                value="log in" id="button"/>
-      <input type="submit" name="button1"
-                value="Sign up" id="button"/><br/> 
+    <input type="password" placeholder="Enter Password" name="password" required>   
+    <br/><label> department <br/>   
+  <input type="text" name="depart" placeholder= "DEPARTMENT" size="10" required />   
+  </label> 
+  <br/><label> Gender <br/>   
+  <input type="text" name="gender" placeholder= "M/F" size="10" required />   
+  </label> 
+  <br/><label> campus name <br/>   
+  <input type="text" name="campus" placeholder= "campus name" size="10" required />   
+  </label> 
+  <br/> <input type="submit" name="button1"
+                value="SUBMIT" id="button"/><br/> 
 </form>  
 </div>
 </body>  

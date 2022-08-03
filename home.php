@@ -193,7 +193,7 @@ a{
 </div>
 <div class="button13">
     <button ><a href="login.php">LOG IN</a></button>
-    <button><a>SIGN UP</a></button>
+    <button><a href="signup.php">SIGN UP</a></button>
 </div>
 <div>
 
