@@ -5,7 +5,7 @@
   mysqli_query($conn, $sql);
   mysqli_close($conn);*/
 if(isset($_POST["button2"])) {
-echo "button2 ppressed";
+echo "SUBMITTED";
 $first =$_REQUEST["firstname"];
 $second =$_REQUEST["lastname"];
 $reg = $_REQUEST["reg"];

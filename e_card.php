@@ -2,8 +2,7 @@
   require 'cordinating.php';
 
 if(isset($_POST["button2"])) {
-echo "button2 ppressed";
-
+echo "SUBMITED";
 $reg =$_REQUEST["reg"];
 $first =$_REQUEST["firstname"];
 $second =$_REQUEST["lastname"];

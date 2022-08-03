@@ -5,13 +5,13 @@
   mysqli_query($conn, $sql);
   mysqli_close($conn);*/
 if(isset($_POST["button2"])) {
-echo "button2 ppressed";
+echo "SUBMITED";
 $email =$_REQUEST["email"];
 $password =$_REQUEST["password"];
 $reg = $_REQUEST["reg"];
 
 
- $sql ="INSERT INTO login_form(reg,email,pass) VALUES('$reg','$email','$password')";
+ $sql ="INSERT INTO login_form(username,email,pass) VALUES('$reg','$email','$password')";
 mysqli_query($conn, $sql);
 mysqli_close($conn);
 
